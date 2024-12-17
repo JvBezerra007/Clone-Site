@@ -1,0 +1,250 @@
+:root {
+    --primary-bg: #232f3e;
+    --primary-text: #fff;
+    --hover-color: #ff9900;
+    --spacing: 10px;
+    --font-family: 'Roboto', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #e9ecef;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing) 20px;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Campo de Pesquisa */
+.header__search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing);
+}
+
+.header__search-form {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header__search-input {
+    flex: 1;
+    padding: var(--spacing);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.header__search-button {
+    background-color: var(--primary-bg);
+    border: none;
+    padding: var(--spacing);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.header__search-button:hover {
+    background-color: var(--hover-color);
+}
+
+.header__search-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+}
+
+.header__item {
+    margin-left: 20px;
+}
+
+.header__link {
+    color: var(--primary-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: var(--hover-color);
+}
+
+.banner {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.banner__image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.cartoes {
+    padding: 20px;
+    text-align: center;
+}
+
+.cartoes__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.cartoes__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cartoes__item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 220px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartoes__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartoes__imagem {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.cartoes__nome {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.cartoes__preco {
+    color: #b12704;
+    font-weight: bold;
+}
+
+.rodape {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.rodape__voltar-ao-topo {
+    margin-bottom: 20px;
+}
+
+.rodape__voltar-ao-topo-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.rodape__voltar-ao-topo-link:hover {
+    color: #ff9900;
+}
+
+.rodape__links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.rodape__coluna {
+    text-align: left;
+}
+
+.rodape__titulo {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rodape__list {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape__link {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.rodape__link:hover {
+    color: #ff9900;
+}
+
+.rodape__botao {
+    border-top: 1px solid #3a4553;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.rodape__logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.rodape__copyright {
+    font-size: 0.8rem;
+    color: #ccc;
+}
